@@ -5,207 +5,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Formulario</title>
+    <title>Document</title>
+
+
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            border: 1px solid #e7e7e7;
+            background-color: #f3f3f3;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: #666;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #ddd;
+        }
+
+        
+    </style>
+
 </head>
 
-<body>
-
+<body style="background-color:#CACFD2;">
     <header>
-        <h1>
-            <center> Formulario Personal </center>
-        </h1>
+        <img src="wo.png" alt=" Imagen de mundo " width="1300" height="140">
     </header>
+
     <form action="index.html" method="GET">
-        <fieldset>
-            <fieldset>
-                <legend>Información personal </legend>
-                <br>
-                <div>
-                    <label for="Nombre">Nombre: </label>
-                    <input type="text" name="Nombre" id="Nombre" placeholder="Escriba su nombre" required>
+        
+<br>
+        <nav>
+            <ul>
+                <li><a href="https://www.google.com/" target="_blank">Home</a></li>
+                <li><a href="https://www.google.com/" target="_blank">News</a></li>
+                <li><a href="https://www.google.com/" target="_blank">Personal Account</a></li>
+                <li><a href="https://www.google.com/" target="_blank">Contact us</a></li>
+                <li><a href="https://www.google.com/" target="_blank">About</a></li>
+            </ul>
 
-                    <label for="Apellido">Apellido: </label>
-                    <input type="text" name="Apellido" id="Apellido" placeholder=" Escriba su apellido " required>
+        </nav>
 
-                    <label for="Nacimiento">Fecha de nacimiento: </label>
-                    <input type="date" name="Nacimiento" id="Nacimiento" required>
-                </div>
-                <br>
-                <div>
-                    <label for="Animal"> Animal Favorito: </label>
-                    <select name="Animal" id="Animal" required>
-                        <option value="">Animal...</option>
-                        <option value="Perro">Perro</option>
-                        <option value="Gato">Gato</option>
-                        <option value="Delfin">Delfín</option>
-                        <option value="Mariposa">Mariposa</option>
-                        <option value="Pony">Pony</option>
-                        <option value="Oso Polar">Oso Polar</option>
-                        <option value="Tortuga">Tortuga</option>
-                        <option value="Pez">Pez</option>
-                        <option value="Hamster">Hásmter</option>
-                        <option value="Otro">Otro</option>
 
-                    </select>
-                </div>
-                <br>
-            </fieldset>
-            <br>
-            <fieldset>
-                <legend> Cuenta </legend>
+        <section>
+            <table border="0" cellpadding="10" cellspacing="100">
 
-                <div>
-                    <label for="email">Email: </label>
-                    <input type="email" name="email" id="email" placeholder="danniela@hotmail.com" required>
-                </div>
-                <br>
-                <div>
-                    <label for="pass">Contraseña: </label>
-                    <input type="password" name="pass" id="pass" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                <tr>
+                    <td><img src="si.png" alt="place" width="600"></td>
+                    <td>
+                        <fieldset style="background-color:#BDC3C7;">
+                            <legend> ** SIGN UP ** </legend>
+                            <br>
+<br>
+                            <div>
+                                <label for="Nombre">Name: </label>
+                                <input type="text" name="Nombre" id="Nombre" placeholder="Write your name" required>
+                            </div>
+                            <br> <br>
+                            <div>
+                                <label for="Apellido">Last name: </label>
+                                <input type="text" name="Apellido" id="Apellido" placeholder=" Write your last name " required>
+                            </div>
+                            <br> <br>
+                            <div>
+                                <label for="Nacimiento">Birthday: </label>
+                                <input type="date" name="Nacimiento" id="Nacimiento" required>
+                            </div>
+                            <br> <br>
+                            <div>
+                                <label for="email">Email: </label>
+                                <input type="email" name="email" id="email"  required>
+                            </div>
+                            <br> <br>
+                            <div>
+                                <label for="pass">Password: </label>
+                                <input type="password" name="pass" id="pass" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
 
-                </div>
-                <br>
-                <div>
-                    <label for="pass1">Validar contraseña: </label>
-                    <input type="password" name="pass1" id="pass1" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                            </div>
+                            <br> <br>
+                            <div>
+                                <label for="pass1">Repeat Password: </label>
+                                <input type="password" name="pass1" id="pass1" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
 
-                </div>
+                            </div>
+                            <br> <br>
+                            <input type="submit" value="  SIGN UP ">
 
-            </fieldset>
 
-            <br> <br>
+                    </td>
 
-            <fieldset>
-                <legend> Contacto </legend>
 
-                <div>
-                    <label for="Direccion"> Dirección: </label>
-                    <input type="text" name="Direccion" id="Direccion" placeholder="Digite su direccion">
-                </div>
+            </table>
 
-                <br>
-                <div>
-                    <label for="Pais"> País: </label>
-                    <select name="country">
-                        <option value="">País...</option>
-                        <option value="AF">Afghanistan</option>
-                        <option value="AL">Albania</option>
-                        <option value="DZ">Algeria</option>
-                        <option value="AS">American Samoa</option>
-                        <option value="AU">Australia</option>
-                        <option value="AT">Austria</option>
-                        <option value="AZ">Azerbaijan</option>
-                        <option value="BS">Bahamas</option>
-                        <option value="BH">Bahrain</option>
-                        <option value="BD">Bangladesh</option>
-                        <option value="BB">Barbados</option>
-                        <option value="BY">Belarus</option>
-                        <option value="BE">Belgium</option>
-                        <option value="BZ">Belize</option>
-                        <option value="BJ">Benin</option>
-                        <option value="BM">Bermuda</option>
-                        <option value="BT">Bhutan</option>
-                        <option value="BO">Bolivia</option>
-                        <option value="CD">Channel Islands</option>
-                        <option value="CL">Chile</option>
-                        <option value="CN">China</option>
-                        <option value="CI">Christmas Island</option>
-                        <option value="CS">Cocos Island</option>
-                        <option value="CO">Colombia</option>
-                        <option value="CC">Comoros</option>
-                        <option value="CG">Congo</option>
-                        <option value="CK">Cook Islands</option>
-                        <option value="DJ">Djibouti</option>
-                        <option value="DM">Dominica</option>
-                        <option value="DO">Dominican Republic</option>
-                        <option value="TM">East Timor</option>
-                        <option value="EC">Ecuador</option>
-                        <option value="EG">Egypt</option>
-                        <option value="SV">El Salvador</option>
-                        <option value="GQ">Equatorial Guinea</option>
-                        <option value="ER">Eritrea</option>
-                        <option value="EE">Estonia</option>
-                        <option value="ET">Ethiopia</option>
-                        <option value="FA">Falkland Islands</option>
-                        <option value="FO">Faroe Islands</option>
-                        <option value="FJ">Fiji</option>
-                        <option value="FI">Finland</option>
-                        <option value="FR">France</option>
-                        <option value="GB">Great Britain</option>
-                        <option value="GT">Guatemala</option>
-                        <option value="GN">Guinea</option>
-                        <option value="GY">Guyana</option>
-                        <option value="HT">Haiti</option>
-                        <option value="HW">Hawaii</option>
-                        <option value="HN">Honduras</option>
-                        <option value="HK">Hong Kong</option>
-                        <option value="HU">Hungary</option>
-                        <option value="IS">Iceland</option>
-                        <option value="IN">India</option>
-                        <option value="ID">Indonesia</option>
-                        <option value="JM">Jamaica</option>
-                        <option value="JP">Japan</option>
-                        <option value="JO">Jordan</option>
-                        <option value="KZ">Kazakhstan</option>
-                        <option value="KE">Kenya</option>
-                        <option value="KI">Kiribati</option>
-                        <option value="MH">Marshall Islands</option>
-                        <option value="MI">Midway Islands</option>
-                        <option value="MM">Myanmar</option>
-                        <option value="NA">Nambia</option>
-                        <option value="NU">Nauru</option>
-                        <option value="NE">Niger</option>
-                        <option value="OM">Oman</option>
-                        <option value="RO">Romania</option>
-                        <option value="RU">Russia</option>
-                        <option value="AS">Samoa American</option>
-                        <option value="SM">San Marino</option>
-                        <option value="ST">Sao Tome &amp; Principe</option>
-                        <option value="SA">Saudi Arabia</option>
-                        <option value="SN">Senegal</option>
-                        <option value="RS">Serbia</option>
-                        <option value="SC">Seychelles</option>
-                        <option value="SE">Sweden</option>
-                        <option value="CH">Switzerland</option>
-                        <option value="SY">Syria</option>
-                        <option value="TA">Tahiti</option>
-                        <option value="TW">Taiwan</option>
-                        <option value="TJ">Tajikistan</option>
-                        <option value="TZ">Tanzania</option>
-                        <option value="TH">Thailand</option>
-                        <option value="TG">Togo</option>
-                        <option value="TR">Turkey</option>
-                        <option value="TU">Turkmenistan</option>
-                        <option value="TC">Turks &amp; Caicos Is</option>
-                        <option value="GB">United Kingdom</option>
-                        <option value="US">United States of America</option>
-                        <option value="UY">Uruguay</option>
-                        <option value="UZ">Uzbekistan</option>
-                        <option value="VU">Vanuatu</option>
-                        <option value="VS">Vatican City State</option>
-                        <option value="VE">Venezuela</option>
-                        <option value="ZM">Zambia</option>
-                        <option value="ZW">Zimbabwe</option>
-                    </select>
-                </div>
-                <br>
 
-                <div>
-                    <label for="cui"> Cuidad: </label>
-                    <input type="text" name="cui" id="cui" placeholder="Ingrese cuidad" required>
-                </div>
+        </section>
 
-                <br>
+<footer style="background-color:rgb(145, 153, 153);"> 
+ <p > 
 
-                <div>
-                    <label for="Num"> Número Telefónico </label>
-                    <input type="tel" name="Num" id="Num" required pattern="[0-9]{8}" title="8 números para un número telefónico">
-                </div>
-            </fieldset>
-        </fieldset>
-        <br> <br>
-        <input type="submit" value="Enviar formulario">
+   <em> New-est Online </em> 
+ </p>
+ 
+ <address>
+        Contact <a href="https://www.google.com/">New-est Online</a>
+      </address> 
 
+</footer>
     </form>
 
 </body>
